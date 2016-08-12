@@ -28,10 +28,16 @@ python github-dork.py -u techgaun                                       # search
 
 python github-dork.py -u dev-nepal                                      # search all repos of an organization
 
+python github-dork.py -m FEED_TOKEN					# monitor user private feed looking for users to scan
+
 GH_USER=techgaun GH_PWD=<mypass> python github-dork.py -u dev-nepal     # search as authenticated user
 
 GH_TOKEN=<github_token> python github-dork.py -u dev-nepal              # search using auth token
 ```
+
+#### Monitor mode
+
+Allow users to scan new code from users that merge new code into repositories that you are watching. First version just print output and not support background runnning, however target is to create a live feed of posible sensitive data.
 
 #### Limitations
 
